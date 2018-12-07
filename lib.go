@@ -53,7 +53,7 @@ func (f *File) saveFileList(name string, content []byte) {
 	f.XLSX[name] = newContent
 }
 
-// Read file content as string in a archive file.
+// readFile file content as string in a archive file.
 func readFile(file *zip.File) []byte {
 	rc, err := file.Open()
 	if err != nil {
